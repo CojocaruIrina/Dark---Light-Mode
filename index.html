@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Dark Mode</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--DarkMode Switch-->
+    <div class="theme-switch-wrapper">
+        <span id="toggle-icon">
+            <span class="toggle-text">Light Mode</span>
+            <i class="fas fa-sun"></i>
+        </span>
+        <label class="theme-switch">
+            <input type="checkbox">
+            <div class="slider round"></div>
+        </label>        
+    </div>
+    <!--Navigation-->
+    <nav id="nav">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
+    <!--Home section-->
+    <section id="home">
+        <div class="title-group" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration ="1000">
+            <h1>Custom Tittle Here</h1>
+            <h2>Welcome to the Website</h2>
+        </div>
+    </section>
+    <!--About Section-->
+    <section id="about" data-aos="zoom-out" data-aos-duration ="1000">
+        <h1>Undraw Illustrations</h1>
+        <div class="about-container">
+          <div class="image-container" data-aos="fade-right" data-aos-delay = "500">
+              <h2>Web Innovation</h2>
+              <img src="img/undraw_proud_coder_light.svg" alt="Proud Coder" id="image1">
+          </div>  
+          <div class="image-container" data-aos="fade-right" data-aos-delay="900">
+              <h2>Problem Solving</h2>
+              <img src="img/undraw_feeling_proud_light.svg" alt="Proud Coder" id="image2">
+          </div>
+          <div class="image-container" data-aos="fade-right" data-aos-delay = "1300">
+              <h2>High Concept</h2>
+              <img src="img/undraw_conceptual_idea_light.svg" alt="Proud Coder" id="image3">
+          </div>
+        </div>
+    </section>
+    <!--Projects Section-->
+    <section id="projects">
+        <h1 data-aos= "zoom-out-down" data-aos-duration = "700">Buttons</h1>
+        <div class="buttons">
+            <button class="primary" data-aos="zoom-out-right" data-aos-duration="800">Primay</button>
+            <button class="secondary" data-aos="zoom-out-right" data-aos-duration="800">Secondary</button>
+            <button class="primary" disabled data-aos="zoom-out-up" data-aos-duration="800">Disabled</button>
+            <button class="outline" data-aos="zoom-out-up" data-aos-duration="800">Outline</button>
+            <button class="secondary outline" data-aos="zoom-out-left" data-aos-duration="800">Alt Outline</button>
+            <button class="outline" disabled data-aos="zoom-out-left" data-aos-duration="800">Disabled</button>
+        </div>
+        <div class="text-box" id="text-box">
+            <p data-aos="zoom-in-right" data-aos-duration ="1000">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae amet eligendi, itaque ullam, libero aut sapiente saepe qui natus vitae voluptatibus quisquam repudiandae magnam sit! Asperiores impedit saepe exercitationem blanditiis.</p>
+        </div>
+    </section>
+    <!--Contact Section-->
+    <section id="contact">
+        <div class="social-icons">
+            <i class="fab fa-instagram" data-aos="zoom-out-left" data-aos-delay="400"> </i>
+            <i class="fab fa-linkedin-in" data-aos="zoom-out-left" data-aos-delay="600"></i>
+            <i class="fab fa-medium" data-aos="zoom-out-left" data-aos-delay="800"></i>
+            <i class="fab fa-github" data-aos="zoom-out-left" data-aos-delay="1000"></i>
+            <i class="fab fa-youtube" data-aos="zoom-out-left" data-aos-delay="1200"></i>
+            <i class="fab fa-twitter" data-aos="zoom-out-left" data-aos-delay="1400"></i>
+            <i class="fab fa-facebook" data-aos="zoom-out-left" data-aos-delay="1600"></i>
+        </div>
+    </section>
+    <!-- Script -->
+    <script src="script.js"></script>
+    <!--Animation on Scroll-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
